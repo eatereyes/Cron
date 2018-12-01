@@ -34,16 +34,17 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#">Adicionar Tarefa</a>
+                <li>
+                    <a href="main.html">Adicionar Tarefa</a>
                 </li>
                 <li>
                     <a href="Exibir.html">Exibir Tarefas</a>
                 </li>
-                <li>
-                    <a href="deletar.html">Cancelar Tarefa</a>
+                <li   class="active">
+                    <a href="#">Cancelar Tarefa</a>
                 </li>
             </ul>
+
         </nav>
 
         <!-- Conteúdo da página  -->
@@ -58,38 +59,18 @@
                     </button>
                 </div>
             </nav>
+
             <div class="container">
-                <form>
-                    <div class="form-group">
-                        <label for="Comando">Comando</label>
-                        <input class="form-control input-sm" type="text" id="comando" name="comando" required>
-                    </div>
-                    <div class="form-group row">
-                        <div class="form-group col-md-2">
-                            <label for="minutes">Minutos</label>
-                            <input class="form-control" type="text" id="minutes" name="minutes" placeholder="0-59">
+                <form> <!-- necessário para o botão -->
+                        <div class="form-group">
+                            <label for="deletar">Comando</label>
+                            <input class="form-control input-sm" type="text" id="deletar" name="deletar" required>
+                            <span class="help-block">Comando da Tarefa a ser deletada</span>
                         </div>
-                        <div class="form-group col-md-2">
-                                <label for="hours">Horas</label>
-                                <input class="form-control" type="text" id="hours" name="hours" placeholder="0-23">
-                            </div>
-                            <div class="form-group col-md-2">
-                                    <label for="days">Dia</label>
-                                    <input class="form-control" type="text" id="days" name="days" placeholder="1-31">
-                                </div>
-                        <div class="form-group col-md-2">
-                            <label for="month">Mes</label>
-                            <input class="form-control" type="text" id="month" name="mes" placeholder="1-12">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="weekday">Dias da semana</label>
-                            <input class="form-control" type="text" id="weekday" name="weekday" placeholder="0-7">
-                        </div>
-                    </div>
-                    <button type="submit">Confirmar</button>
-                    <button type="reset">Cancelar</button>
-                </form>
-            </div>
+                        <button type="submit">Confirmar</button>
+                        <button type="reset">Cancelar</button>
+                </div>
+            </form>
 
         </div>
 
