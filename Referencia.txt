@@ -1,1 +1,4 @@
 https://www.w3schools.com/bootstrap/bootstrap_forms_sizing.asp
+https://www.w3schools.com/jsref/event_onclick.asp
+https://bootstrapious.com/p/bootstrap-sidebar
+https://www.w3schools.com/js/js_json_php.asp
