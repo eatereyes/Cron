@@ -8,15 +8,13 @@
 
     <title>Cron</title>
 
-    <!-- Bootstrap CSS CDN -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style2.css">
-    <!-- Scrollbar Custom CSS -->
+    <!-- CSS Bar -->
     <link rel="stylesheet" href="css\sidebar.css">
 
-    <!-- Font Awesome JS -->
+    <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
         crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
@@ -37,18 +35,15 @@
                 <li>
                     <a href="main.html">Adicionar Tarefa</a>
                 </li>
-                <li  class="active">
+                <li class="active">
                     <a href="#">Exibir Tarefas</a>
                 </li>
-                <li>
-                    <a href="deletar.html">Cancelar Tarefa</a>
-                </li>
-
             </ul>
 
 
 
         </nav>
+
 
         <!-- Conteúdo da página  -->
 
@@ -67,17 +62,30 @@
                     <div class="card-header">
                         <h2 style="text-align: center; background-color: black; color: white">Tarefas</h1>
                     </div>
-                <div class="tabela mt-4">
-                    <table class="table" id="tabela">
-                        
-        
-                    </table>
+                    <div class="tabela mt-4">
+                        <table class="table" id="table">
+                            <thead>
+                                <tr>
+                                    <th>Comando</th>
+                                    <th>Mes</th>
+                                    <th>Dia do Mes</th>
+                                    <th>Dia da Semana</th>
+                                    <th>Horas</th>
+                                    <th>Minutos</th>
+                                    <th></th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
             </div>
-        </div>
 
         </div>
-
-    </div>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -91,8 +99,10 @@
         crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
+    <!-- Script para movementação da Sidebar-->
     <script type="text/javascript" src="js\j.js"></script>
+    <!-- Scritp para a tabela -->
+    <script src="js\table.js"></script>
 </body>
 
 </html>

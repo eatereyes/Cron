@@ -8,15 +8,14 @@
 
     <title>Cron</title>
 
-    <!-- Bootstrap CSS CDN -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style2.css">
-    <!-- Scrollbar Custom CSS -->
+
+    <!-- Css Bar -->
     <link rel="stylesheet" href="css\sidebar.css">
 
-    <!-- Font Awesome JS -->
+    <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
         crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
@@ -40,9 +39,6 @@
                 <li>
                     <a href="Exibir.html">Exibir Tarefas</a>
                 </li>
-                <li>
-                    <a href="deletar.html">Cancelar Tarefa</a>
-                </li>
             </ul>
         </nav>
 
@@ -62,7 +58,7 @@
                 <form>
                     <div class="form-group">
                         <label for="Comando">Comando</label>
-                        <input class="form-control input-sm" type="text" id="comando" name="comando" required>
+                        <input class="form-control input-sm" type="text" id="command" name="command" required>
                     </div>
                     <div class="form-group row">
                         <div class="form-group col-md-2">
@@ -74,12 +70,12 @@
                             <input class="form-control" type="text" id="hours" name="hours" placeholder="0-23">
                         </div>
                         <div class="form-group col-md-2">
-                            <label for="days">Dia</label>
+                            <label for="days">Dia do mes</label>
                             <input class="form-control" type="text" id="days" name="days" placeholder="1-31">
                         </div>
                         <div class="form-group col-md-2">
                             <label for="month">Mes</label>
-                            <input class="form-control" type="text" id="month" name="mes" placeholder="1-12">
+                            <input class="form-control" type="text" id="month" name="month" placeholder="1-12">
                         </div>
                         <div class="form-group col-md-2">
                             <label for="weekday">Dias da semana</label>
@@ -87,7 +83,7 @@
                         </div>
                     </div>
                     <button type="submit" id="submit">submit</button>
-                    <button type="reset" id="cancel">cancel</button>
+                    <button type="reset" id="reset">cancel</button>
                 </form>
             </div>
 
@@ -107,7 +103,7 @@
         crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
+    <!-- Script para movementação da Sidebar-->
     <script type="text/javascript" src="js\j.js"></script>
 </body>
 
