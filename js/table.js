@@ -22,8 +22,8 @@ function getinfo(url) {
 
   }
 
-  function removetask(ts){
+  /*function removetask(ts){
       
-  }
+  } */
 
   getinfo('PHP\show.php')
