@@ -17,7 +17,7 @@ function getinfo(url) {
           <td>${tasks.minutes}</td>
           <td><button onclick="removetask(this)" style="border: 0; color: red; background-color:white">remover</button></td>
           </tr>`
-          table.insertAdjacentElement('beforeend', view)
+          table.insertAdjacentHTML('beforeend', view)
       }
 
   }
@@ -26,4 +26,4 @@ function getinfo(url) {
       
   } */
 
-  getinfo('PHP\show.php')
+  getinfo('ja.json')
