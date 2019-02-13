@@ -15,15 +15,20 @@ function getinfo(url) {
           <td>${tasks.hours}</td>
           <td>${tasks.weekday}</td>
           <td>${tasks.minutes}</td>
-          <td><button onclick="removetask(this)" style="border: 0; color: red; background-color:white">remover</button></td>
+          <td><i class="fas fa-trash-alt" onclick="removetask(this)"></i></td>
+          <td><button onclick="editask(this)" style="border: 0; color: red; background-color:white">editar</button></td>
           </tr>`
           table.insertAdjacentHTML('beforeend', view)
       }
 
   }
+  /*function editask{
 
-  /*function removetask(ts){
+  }*/
+
+  function removetask(ts){
+      console.log("aaaaaaaa")
       
-  } */
+  } 
 
   getinfo('ja.json')
